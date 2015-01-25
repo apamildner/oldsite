@@ -23,6 +23,12 @@ p {
   margin-left: 15px;
   margin-bottom: 40.5px;
 }
+.side-section img {
+  position: relative;
+  margin-left: -15px;
+  height: 100%;
+  width: 111%;
+}
 .sidr-left-link {
   border: solid 4px #ff9900;
   padding: 5px;
