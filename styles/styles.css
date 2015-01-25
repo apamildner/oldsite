@@ -11,6 +11,25 @@ body {
 p {
   margin: 0 0 27px;
 }
+article {
+  color: #eeeee7;
+  text-align: center;
+}
+article h1 {
+  font-size: 78px;
+  font-weight: 700;
+}
+article h3 {
+  font-size: 38px;
+  font-weight: 300;
+  font-style: italic;
+}
+article p {
+  text-align: left;
+  margin-left: 60px;
+  font-size: 28px;
+  line-height: 1.75em;
+}
 /* Load section styles */
 /* Section styling */
 .side-section {
@@ -18,16 +37,16 @@ p {
   border: solid 4px black;
   height: 400px;
   width: 380px;
-  background-color: #ff9900;
-  opacity: 0.4;
+  background: #ffffff url("scratched.jpg") repeat repeat;
+  opacity: 0.8;
   margin-left: 15px;
   margin-bottom: 40.5px;
 }
 .side-section img {
-  position: relative;
-  margin-left: -15px;
-  height: 100%;
-  width: 111%;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
 }
 .sidr-left-link {
   border: solid 4px #ff9900;
@@ -58,14 +77,15 @@ p {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 5px auto 0px auto;
-  border-bottom: solid 2px black;
+  box-shadow: 0px 10px 50px #242e35;
   height: 150px;
-  padding-left: 885px;
+  line-height: -10px;
 }
 .main-nav ul span {
   font-weight: bold;
   font-size: 23px;
   color: black;
+  float: right;
 }
 .main-nav ul li {
   cursor: pointer;
@@ -74,6 +94,8 @@ p {
   height: auto;
   width: auto;
   text-align: center;
+  float: right;
+  margin-right: 27px;
 }
 .main-nav ul li:hover {
   background-color: transparent;
@@ -99,13 +121,13 @@ p {
   height: 5px;
   width: 100%;
   border-radius: 10px;
+  border-bottom: solid 2px black;
   background-color: #ff9900;
   opacity: 0.3;
 }
 /* Load maincontent styles */
 body {
-  border-top: solid 4px #9eaeb3;
-  background: #242e35;
+  background: #6599ff;
 }
 header {
   height: 175px;
@@ -113,6 +135,7 @@ header {
   background: #ffffff url("scratched.jpg") repeat repeat;
   opacity: 0.9;
   width: 100%;
+  box-shadow: inset 0px 15px 20px #888888;
 }
 header .header-content {
   position: relative;
@@ -130,9 +153,21 @@ header .header-content img {
 .main-container {
   position: relative;
   display: block;
-  width: 1200px;
-  height: 2000px;
+  width: 100%;
+  height: 800px;
   margin: 140px auto;
 }
 /* Load maincontent styles */
 /* Load responsive rules  */
+.sub-container-1 {
+  position: relative;
+  background-color: #6f5ca3;
+  width: 100%;
+  height: 1200px;
+}
+.sub-container-2 {
+  position: relative;
+  background-color: #097054;
+  width: 100%;
+  height: 1200px;
+}

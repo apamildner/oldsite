@@ -1,100 +1,62 @@
 .main-nav {
+    position: relative;
+    padding: @baseline*1.5 0;
+    ul {
+        position: relative;
+        list-style-type: none;
+        background-color: @fancyorange;
+        width: 70%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        margin: 5px auto 0px auto;
+        box-shadow: 0px 10px 50px @fancydarkblue;
+        height: 150px;
+        line-height: -10px;
+        
+        span {
+            font-weight: bold;
+            font-size: 23px;
+            color: black;
+            float:right;
 
-
-position: relative;
-
-padding: @baseline*1.5 0;
-    
-	
-
-	ul{
-		position: relative;
-		list-style-type: none;
-		background-color: @fancyorange;
-		width: 70%;
-		border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-		margin: 5px auto 0px auto;
-		border-bottom: solid 2px black;
-		height: 150px;
-		padding-left: 885px;
-		
-		span{
-
-			font-weight: bold;
-font-size: 23px;
-color: black;
-
-		}
-
-
-		li{
-			cursor: pointer;
-
-			
-			margin-top: 80px;
-			
-
-
-
-			display:inline-block;
-			
-
-			
-
-			height: auto;
-			width: auto;
-
-			
-			
-		
-			text-align: center;
-			&:hover{
-			background-color: transparent;
-			}
-
-
-
-
-			a{
-				position: relative;
-				color:black;
-				
-
-				letter-spacing: 2px;
-				font-weight: bold;
-				font-size: @baseline*0.7;
-				
-				text-transform: uppercase;
-				&:hover{
-					color:black;
-
-				}
-			}
-		}
-	}
+        }
+        li {
+            cursor: pointer;
+            margin-top: 80px;
+            display: inline-block;
+            height: auto;
+            width: auto;
+            text-align: center;
+            float: right;
+            margin-right: 27px;
+            &:hover {
+                background-color: transparent;
+            }
+            a {
+                position: relative;
+                color: black;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: @baseline*0.7;
+                text-transform: uppercase;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
 }
-
-.header-content{
-
-	marign-right: 50%;
+.header-content {
+    marign-right: 50%;
 }
-
-.shadow{
-
-	
-
-
-
- position: absolute;
- top:148px;
- left:0px;
-
-	height: 5px;
-	width: 100%;
-	border-radius: 10px;
-
-	
-	background-color: @fancyorange;
-	opacity:0.3;
+.shadow {
+    position: absolute;
+    top: 148px;
+    left: 0px;
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    border-bottom: solid 2px black;
+    background-color: @fancyorange;
+    opacity: 0.3;
 }
