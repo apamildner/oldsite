@@ -18,7 +18,7 @@ p {
   border: solid 4px black;
   height: 400px;
   width: 380px;
-  background-color: #ffcc00;
+  background-color: #ff9900;
   opacity: 0.4;
   margin-left: 15px;
   margin-bottom: 40.5px;
@@ -39,22 +39,21 @@ p {
 .main-nav ul {
   position: relative;
   list-style-type: none;
-  background-color: #ffcc00;
+  background-color: #ff9900;
   width: 70%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 5px auto 0px auto;
   border-bottom: solid 2px black;
+  height: 150px;
+  padding-left: 970px;
 }
 .main-nav ul li {
+  margin-top: 80px;
   display: inline-block;
-  margin-left: 27px;
-  background-color: black;
-  height: 50px;
-  width: 250px;
-  padding: 10px;
-  border: solid 2px black;
-  border-radius: 10px;
+  margin-left: 10px;
+  height: auto;
+  width: auto;
   text-align: center;
 }
 .main-nav ul li:hover {
@@ -62,9 +61,10 @@ p {
 }
 .main-nav ul li a {
   position: relative;
-  color: white;
+  color: black;
   letter-spacing: 2px;
   font-weight: bold;
+  font-size: 18.9px;
   text-transform: uppercase;
 }
 .main-nav ul li a:hover {
@@ -75,23 +75,23 @@ p {
 }
 .shadow {
   position: absolute;
-  top: 130px;
+  top: 148px;
   left: 0px;
   height: 5px;
   width: 100%;
   border-radius: 10px;
-  background-color: #ffcc00;
+  background-color: #ff9900;
   opacity: 0.3;
 }
 /* Load maincontent styles */
 body {
   border-top: solid 4px #9eaeb3;
-  background: #ffffff url("metal.jpg") repeat repeat;
+  background: #242e35;
 }
 header {
   height: 175px;
   padding-left: 40px;
-  background: #ffffff url("met-min-bg.jpg") repeat repeat;
+  background: #ffffff url("scratched.jpg") repeat repeat;
   opacity: 0.9;
   width: 100%;
 }
