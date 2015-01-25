@@ -1,0 +1,10 @@
+/* Typography variables*/
+/* Colors */
+body {
+  color: #4a7b6f;
+  font: 18px / 27px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  margin: 0 0 27px;
+}

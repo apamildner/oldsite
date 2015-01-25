@@ -1,0 +1,119 @@
+/* Main stylesheet */
+/* Load Variables */
+/* Colors */
+/* Load typography styles */
+/* Typography variables*/
+body {
+  color: #097054;
+  font: 18px / 27px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  margin: 0 0 27px;
+}
+/* Load section styles */
+/* Section styling */
+.side-section {
+  position: relative;
+  border: solid 4px black;
+  height: 400px;
+  width: 380px;
+  background-color: #ffcc00;
+  opacity: 0.4;
+  margin-left: 15px;
+  margin-bottom: 40.5px;
+}
+.sidr-left-link {
+  border: solid 4px grey;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 0.8;
+  font-weight: bold;
+  position: fixed;
+}
+/* Load header styles */
+.main-nav {
+  position: relative;
+  padding: 40.5px 0;
+}
+.main-nav ul {
+  position: relative;
+  list-style-type: none;
+  background-color: #ffcc00;
+  width: 70%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 5px auto 0px auto;
+  border-bottom: solid 2px black;
+}
+.main-nav ul li {
+  display: inline-block;
+  margin-left: 27px;
+  background-color: black;
+  height: 50px;
+  width: 250px;
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 10px;
+  text-align: center;
+}
+.main-nav ul li:hover {
+  background-color: transparent;
+}
+.main-nav ul li a {
+  position: relative;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.main-nav ul li a:hover {
+  color: black;
+}
+.header-content {
+  marign-rigth: 50%;
+}
+.shadow {
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffcc00;
+  opacity: 0.3;
+}
+/* Load maincontent styles */
+body {
+  border-top: solid 4px #9eaeb3;
+  background: #ffffff url("metal.jpg") repeat repeat;
+}
+header {
+  height: 175px;
+  padding-left: 40px;
+  background: #ffffff url("met-min-bg.jpg") repeat repeat;
+  opacity: 0.9;
+  width: 100%;
+}
+header .header-content {
+  position: relative;
+  bottom: 27px;
+  font-size: 40.5px;
+}
+header .header-content img {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 40px;
+  left: 10px;
+  float: left;
+}
+.main-container {
+  position: relative;
+  display: block;
+  width: 1200px;
+  height: 2000px;
+  margin: 140px auto;
+}
+/* Load maincontent styles */
+/* Load responsive rules  */
