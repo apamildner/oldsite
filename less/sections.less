@@ -25,24 +25,25 @@ margin-bottom: @baseline*1.5;
 
 .sidr-left-link{
 
-	border: solid 4px grey;
+	border: solid 4px @fancyorange;
 	padding: 5px;
 	border-radius: 10px;
+	background-color: @fancyorange;
+	
+	color:black;
 
 	opacity: 0.8;
 	 font-weight: bold;
 	 position: fixed;
+	 visibility: hidden;
 	 
 
-	 a{
 
-
-	
-	 &:hover{
-
-	 }
-	
-	}
+	.inset-shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
 
 
 	

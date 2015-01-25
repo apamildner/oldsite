@@ -24,12 +24,20 @@ p {
   margin-bottom: 40.5px;
 }
 .sidr-left-link {
-  border: solid 4px grey;
+  border: solid 4px #ff9900;
   padding: 5px;
   border-radius: 10px;
+  background-color: #ff9900;
+  color: black;
   opacity: 0.8;
   font-weight: bold;
   position: fixed;
+  visibility: hidden;
+}
+.sidr-left-link .inset-shadow {
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
 }
 /* Load header styles */
 .main-nav {
@@ -46,12 +54,17 @@ p {
   margin: 5px auto 0px auto;
   border-bottom: solid 2px black;
   height: 150px;
-  padding-left: 970px;
+  padding-left: 950px;
+}
+.main-nav ul span {
+  font-weight: bold;
+  font-size: 23px;
+  color: black;
 }
 .main-nav ul li {
+  cursor: pointer;
   margin-top: 80px;
   display: inline-block;
-  margin-left: 10px;
   height: auto;
   width: auto;
   text-align: center;
@@ -71,7 +84,7 @@ p {
   color: black;
 }
 .header-content {
-  marign-rigth: 50%;
+  marign-right: 50%;
 }
 .shadow {
   position: absolute;
