@@ -1,72 +1,55 @@
 /* Section styling */
 
 @import "variables.less";
+.side-section {
+    position: relative;
+    border: solid 4px black;
+    height: 425px;
+    width: 640px;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index:100;
+        &:hover{
+        	opacity: 0.0;
+        }
+    }
+        h1 {
+        	color:@fancygreen;
 
+        	text-align: center;
+            position: relative;
+            margin: 100px auto 100px auto;
+            font-size: 58px;
+            font-weight: 700;
 
-
-
-.side-section{
-position: relative;
-border: solid 4px black;
-
-height: 400px;
-width: 380px;
-
-img{
-	position:absolute;
-	width: 100%;
-	top:0px;
-	left:0px;
-
-
+            
+        }
+    
+    background: #ffffff url("scratched.jpg") repeat repeat;
+    opacity: 0.8;
+    margin-left: @baseline;
+    margin-bottom: @baseline*7;
 }
-
-
-background: #ffffff url("scratched.jpg") repeat repeat;
-opacity: 0.8;
-margin-left: 15px;
-
-margin-bottom: @baseline*1.5;
-
-
-
-
-
-
+.sidr-left-link {
+    border: solid 4px @fancyorange;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: @fancyorange;
+    color: black;
+    opacity: 0.8;
+    font-weight: bold;
+    position: fixed;
+    visibility: hidden;
+    .inset-shadow {
+        -moz-box-shadow: inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow: inset 0 0 10px #000000;
+    }
 }
-
-
-
-.sidr-left-link{
-
-	border: solid 4px @fancyorange;
-	padding: 5px;
-	border-radius: 10px;
-	background-color: @fancyorange;
-	
-	color:black;
-
-	opacity: 0.8;
-	 font-weight: bold;
-	 position: fixed;
-	 visibility: hidden;
-	 
-
-
-	.inset-shadow {
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+.text-section {
+    width: 1000px;
 }
-
-
-	
-}
-	
-
-
-
-
-
-
-

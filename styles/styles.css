@@ -12,8 +12,10 @@ p {
   margin: 0 0 27px;
 }
 article {
+  position: relative;
   color: #eeeee7;
   text-align: center;
+  margin-bottom: 189px;
 }
 article h1 {
   font-size: 78px;
@@ -23,6 +25,11 @@ article h3 {
   font-size: 38px;
   font-weight: 300;
   font-style: italic;
+}
+article i {
+  z-index: 5000;
+  color: black;
+  font-size: 60px;
 }
 article p {
   text-align: left;
@@ -35,18 +42,31 @@ article p {
 .side-section {
   position: relative;
   border: solid 4px black;
-  height: 400px;
-  width: 380px;
+  height: 425px;
+  width: 640px;
   background: #ffffff url("scratched.jpg") repeat repeat;
   opacity: 0.8;
-  margin-left: 15px;
-  margin-bottom: 40.5px;
+  margin-left: 27px;
+  margin-bottom: 189px;
 }
 .side-section img {
   position: absolute;
   width: 100%;
+  height: 100%;
   top: 0px;
   left: 0px;
+  z-index: 100;
+}
+.side-section img:hover {
+  opacity: 0.0;
+}
+.side-section h1 {
+  color: #097054;
+  text-align: center;
+  position: relative;
+  margin: 100px auto 100px auto;
+  font-size: 58px;
+  font-weight: 700;
 }
 .sidr-left-link {
   border: solid 4px #ff9900;
@@ -63,6 +83,9 @@ article p {
   -moz-box-shadow: inset 0 0 10px #000000;
   -webkit-box-shadow: inset 0 0 10px #000000;
   box-shadow: inset 0 0 10px #000000;
+}
+.text-section {
+  width: 1000px;
 }
 /* Load header styles */
 .main-nav {
@@ -154,20 +177,80 @@ header .header-content img {
   position: relative;
   display: block;
   width: 100%;
-  height: 800px;
+  height: 1100px;
   margin: 140px auto;
 }
 /* Load maincontent styles */
 /* Load responsive rules  */
+.flip3D > .front {
+  position: absolute;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+  background: #FFD631;
+  width: 500px;
+  height: 400px;
+  border-radius: 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform 0.8s linear 0s;
+  transition: transform .8s linear 0s;
+}
+.flip3D > .back {
+  position: absolute;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+  transform: perspective(600px) rotateY(180deg);
+  background: #80BFFF;
+  width: 500px;
+  height: 400px;
+  border-radius: 7px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: -webkit-transform 0.8s linear 0s;
+  transition: transform .8s linear 0s;
+}
+.flip3D:hover > .front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(600px) rotateY(-180deg);
+}
+.flip3D:hover > .back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+  transform: perspective(600px) rotateY(0deg);
+}
 .sub-container-1 {
   position: relative;
   background-color: #6f5ca3;
   width: 100%;
-  height: 1200px;
+  height: 100%;
+}
+.sub-container-1 article {
+  color: #d9cdf6;
+  margin: 0px auto;
+  width: 1000px;
+  margin-bottom: 162px;
+}
+.sub-container-1 .pattern {
+  position: relative;
+  background: #ffffff url(checkered.jpg) repeat repeat;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 54px;
+}
+.portrait {
+  position: relative;
+  margin: 0px auto;
+  width: 200px;
+  height: 200px;
+}
+.portrait img {
+  position: relative;
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
 }
 .sub-container-2 {
   position: relative;
   background-color: #097054;
   width: 100%;
+  margin-top: 0px;
   height: 1200px;
 }
