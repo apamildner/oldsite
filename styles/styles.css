@@ -11,6 +11,14 @@ body {
 p {
   margin: 0 0 27px;
 }
+ul {
+  font-size: 100px;
+}
+ul i {
+  position: relative;
+  margin: 40px auto;
+  color: black;
+}
 article {
   position: relative;
   color: #eeeee7;
@@ -25,11 +33,6 @@ article h3 {
   font-size: 38px;
   font-weight: 300;
   font-style: italic;
-}
-article i {
-  z-index: 5000;
-  color: black;
-  font-size: 60px;
 }
 article p {
   text-align: left;
@@ -85,14 +88,28 @@ article p {
   box-shadow: inset 0 0 10px #000000;
 }
 .text-section {
+  position: relative;
   width: 1000px;
 }
 /* Load header styles */
+header {
+  height: 175px;
+  background: #ffffff url("scratched.jpg") repeat repeat;
+  opacity: 0.9;
+  width: 100%;
+  box-shadow: inset 0px 15px 20px #888888;
+}
+header .header-content {
+  position: relative;
+  bottom: 27px;
+  font-size: 40.5px;
+}
 .main-nav {
   position: relative;
   padding: 40.5px 0;
 }
 .main-nav ul {
+  z-index: 1000;
   position: relative;
   list-style-type: none;
   background-color: #ff9900;
@@ -102,17 +119,10 @@ article p {
   margin: 5px auto 0px auto;
   box-shadow: 0px 10px 50px #242e35;
   height: 150px;
-  line-height: -10px;
-}
-.main-nav ul span {
-  font-weight: bold;
-  font-size: 23px;
-  color: black;
-  float: right;
 }
 .main-nav ul li {
   cursor: pointer;
-  margin-top: 80px;
+  margin-top: 40px;
   display: inline-block;
   height: auto;
   width: auto;
@@ -152,27 +162,6 @@ article p {
 body {
   background: #6599ff;
 }
-header {
-  height: 175px;
-  padding-left: 40px;
-  background: #ffffff url("scratched.jpg") repeat repeat;
-  opacity: 0.9;
-  width: 100%;
-  box-shadow: inset 0px 15px 20px #888888;
-}
-header .header-content {
-  position: relative;
-  bottom: 27px;
-  font-size: 40.5px;
-}
-header .header-content img {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  top: 40px;
-  left: 10px;
-  float: left;
-}
 .main-container {
   position: relative;
   display: block;
@@ -182,39 +171,49 @@ header .header-content img {
 }
 /* Load maincontent styles */
 /* Load responsive rules  */
-.flip3D > .front {
-  position: absolute;
-  -webkit-transform: perspective(600px) rotateY(0deg);
-  transform: perspective(600px) rotateY(0deg);
-  background: #FFD631;
-  width: 500px;
-  height: 400px;
-  border-radius: 7px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: -webkit-transform 0.8s linear 0s;
-  transition: transform .8s linear 0s;
+@media (max-width: 1700px) {
+  .text-section {
+    position: relative;
+    width: auto;
+  }
+  .text-section article {
+    width: 500px;
+    margin-bottom: 27px;
+  }
+  .text-section article h1 {
+    font-size: 54.6px;
+  }
+  .text-section article h3 {
+    font-size: 26.6px;
+  }
+  .text-section article p {
+    text-align: left;
+    margin-left: 60px;
+    font-size: 19.6px;
+    line-height: 1.75em;
+  }
+  .side-section {
+    margin-left: 27px;
+    margin-bottom: 0px;
+  }
 }
-.flip3D > .back {
-  position: absolute;
-  -webkit-transform: perspective(600px) rotateY(180deg);
-  transform: perspective(600px) rotateY(180deg);
-  background: #80BFFF;
-  width: 500px;
-  height: 400px;
-  border-radius: 7px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: -webkit-transform 0.8s linear 0s;
-  transition: transform .8s linear 0s;
+@media (max-width: 1214px) {
+  .side-section {
+    width: 384px;
+    height: 255px;
+  }
+  .side-section h1 {
+    visibility: hidden;
+  }
 }
-.flip3D:hover > .front {
-  -webkit-transform: perspective(600px) rotateY(-180deg);
-  transform: perspective(600px) rotateY(-180deg);
-}
-.flip3D:hover > .back {
-  -webkit-transform: perspective(600px) rotateY(0deg);
-  transform: perspective(600px) rotateY(0deg);
+@media (max-width: 858px) {
+  article {
+    margin-top: 27px;
+    height: 100px;
+  }
+  article p {
+    visibility: hidden;
+  }
 }
 .sub-container-1 {
   position: relative;
@@ -252,5 +251,44 @@ header .header-content img {
   background-color: #097054;
   width: 100%;
   margin-top: 0px;
-  height: 1200px;
+  height: 1400px;
+}
+.sub-container-2 .paper {
+  position: relative;
+  background: #ffffff url(paper.jpg) repeat repeat;
+  opacity: 0.9;
+  height: 300px;
+  width: 100%;
+  margin-bottom: 54px;
+  box-shadow: 0px 25px 80px #242e35;
+}
+.sub-container-2 .side-section {
+  position: relative;
+  border: solid 4px black;
+  height: 280px;
+  width: 280px;
+  background: #ffffff url("scratched.jpg") repeat repeat;
+  opacity: 0.8;
+  margin-left: 54px;
+  margin-top: 13.5px;
+  margin-bottom: 13.5px;
+}
+.sub-container-2 .side-section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+.sub-container-2 .side-section img:hover {
+  opacity: 0.0;
+}
+.sub-container-2 .side-section h1 {
+  color: #097054;
+  text-align: center;
+  position: relative;
+  margin: 100px auto 100px auto;
+  font-size: 58px;
+  font-weight: 700;
 }

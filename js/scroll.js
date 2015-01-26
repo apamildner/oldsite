@@ -1,13 +1,21 @@
   
 
-
+$( document ).ready(function() {
 
 	 $('#about').click(function(e){
-      e.preventDefault();
+      
      
-     $("html, body").animate({ scrollTop: 1700 }, 1300);
+     $("html, body").animate({ scrollTop: 1800 }, 1300);
     });
 
+
+	  $('#portfolio').click(function(e){
+
+      
+     
+     $("html, body").animate({ scrollTop: 3000 }, 1300);
+    });
+});
 
 
 	 
