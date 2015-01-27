@@ -45,6 +45,7 @@ article p {
 .side-section {
   position: relative;
   border: solid 4px black;
+  z-index: 0;
   height: 425px;
   width: 640px;
   background: #ffffff url("scratched.jpg") repeat repeat;
@@ -89,27 +90,24 @@ article p {
 }
 .text-section {
   position: relative;
+  z-index: 0;
   width: 1000px;
 }
 /* Load header styles */
 header {
   height: 175px;
+  z-index: 1000;
+  position: relative;
   background: #ffffff url("scratched.jpg") repeat repeat;
   opacity: 0.9;
   width: 100%;
   box-shadow: inset 0px 15px 20px #888888;
 }
-header .header-content {
-  position: relative;
-  bottom: 27px;
-  font-size: 40.5px;
-}
 .main-nav {
-  position: relative;
+  z-index: 1000;
   padding: 40.5px 0;
 }
 .main-nav ul {
-  z-index: 1000;
   position: relative;
   list-style-type: none;
   background-color: #ff9900;
@@ -160,10 +158,12 @@ header .header-content {
 }
 /* Load maincontent styles */
 body {
+  z-index: 0;
   background: #6599ff;
 }
 .main-container {
   position: relative;
+  z-index: 0;
   display: block;
   width: 100%;
   height: 1100px;

@@ -1,21 +1,19 @@
 header {
     height: 175px;
-    
+    z-index: 1000;
+    position: relative;
     background: #ffffff url("scratched.jpg") repeat repeat;
     opacity: 0.9;
     width: 100%;
     box-shadow: inset 0px 15px 20px #888888;
-    .header-content {
-        position: relative;
-        bottom: @baseline;
-        font-size: @baseline*1.5;
-    }
+  
 }
 .main-nav {
-    position: relative;
+    
+    z-index: 1000;
     padding: @baseline*1.5 0;
     ul {
-        z-index: 1000;
+        
         position: relative;
         list-style-type: none;
         background-color: @fancyorange;
