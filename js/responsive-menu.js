@@ -11,6 +11,23 @@ $(document).ready(function(){
         }
 
     });
+
+
+    //This is the autotrigger responsive menu
+
+    $(window).resize(function(){
+
+    	if($( window ).width()<1600){
+
+    		toggleTopMenu();
+    	}
+
+    	else{
+    		bringBackOriginalMenu();
+    	}
+
+
+    });
 });
 
 
