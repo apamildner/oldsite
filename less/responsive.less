@@ -8,18 +8,18 @@
        
         margin-bottom: @baseline;
         h1 {
-            font-size: 78px*0.7;
+            font-size: 78px*0.8;
             
         }
         h3 {
-            font-size: 38px*0.7;
+            font-size: 38px*0.8;
             
         }
       
         p {
             text-align: left;
             margin-left: 60px;
-            font-size: 28px*0.7;
+            font-size: 28px*0.8;
             line-height: 1.75em;
         }
     }
@@ -33,8 +33,43 @@
 
 @media (max-width: 1510px){
 
-	
+   
+
+    .main-nav {
+    
+    
+    padding: 0;
+    ul {
+        
+        position: fixed;
+        width: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        margin: 0px;
+        height: 65px;
+        
+       
+        i{
+            margin-top: 3px;
+        }
+        li {
+           
+            margin-top: 0px;
+           
+            
+          
+           
+        
+            }
+        }
+        .shadow{
+            visibility: hidden;
+        }
+    }
 }
+
+	
+
 @media (max-width: 1214px) {
     .side-section {
         width: 384px;
@@ -42,6 +77,17 @@
         h1{
         	visibility: hidden;
         }
+    }
+}
+
+@media (max-width:1028px){
+
+
+
+
+    span{
+        visibility: visible;
+        width: default;
     }
 }
 

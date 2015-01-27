@@ -181,20 +181,42 @@ body {
     margin-bottom: 27px;
   }
   .text-section article h1 {
-    font-size: 54.6px;
+    font-size: 62.4px;
   }
   .text-section article h3 {
-    font-size: 26.6px;
+    font-size: 30.4px;
   }
   .text-section article p {
     text-align: left;
     margin-left: 60px;
-    font-size: 19.6px;
+    font-size: 22.4px;
     line-height: 1.75em;
   }
   .side-section {
     margin-left: 27px;
     margin-bottom: 0px;
+  }
+}
+@media (max-width: 1510px) {
+  .main-nav {
+    padding: 0;
+  }
+  .main-nav ul {
+    position: fixed;
+    width: 100%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: 0px;
+    height: 65px;
+  }
+  .main-nav ul i {
+    margin-top: 3px;
+  }
+  .main-nav ul li {
+    margin-top: 0px;
+  }
+  .main-nav .shadow {
+    visibility: hidden;
   }
 }
 @media (max-width: 1214px) {
@@ -204,6 +226,12 @@ body {
   }
   .side-section h1 {
     visibility: hidden;
+  }
+}
+@media (max-width: 1028px) {
+  span {
+    visibility: visible;
+    width: default;
   }
 }
 @media (max-width: 858px) {

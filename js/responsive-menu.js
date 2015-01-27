@@ -1,13 +1,23 @@
 
+var clientWidth= $( window ).width();
+
+
+
+
 
 $(document).ready(function(){
+
     $(window).scroll(function(){
         if ($(window).scrollTop() > 250){
             toggleTopMenu();
         }
 
           if ($(window).scrollTop() < 250){
-            bringBackOriginalMenu();
+          	if(!(clientWidth<1600)){
+          		 bringBackOriginalMenu();
+
+          	}
+           
         }
 
     });
@@ -17,9 +27,11 @@ $(document).ready(function(){
 
     $(window).resize(function(){
 
-    	if($( window ).width()<1600){
+    	if(clientWidth<1600){
 
     		toggleTopMenu();
+    	
+    		
     	}
 
     	else{
