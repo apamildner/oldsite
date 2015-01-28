@@ -46,11 +46,12 @@ article p {
   position: relative;
   border: solid 4px black;
   z-index: 0;
-  height: 425px;
+  height: auto;
   width: 640px;
   background: #ffffff url("scratched.jpg") repeat repeat;
   opacity: 0.8;
   margin-left: 27px;
+  margin-top: 27px;
   margin-bottom: 189px;
 }
 .side-section img {
@@ -92,6 +93,7 @@ article p {
   position: relative;
   z-index: 0;
   width: 1000px;
+  margin-bottom: 27px;
 }
 /* Load header styles */
 header {
@@ -158,7 +160,6 @@ header {
 }
 /* Load maincontent styles */
 body {
-  z-index: 0;
   background: #6599ff;
 }
 .main-container {
@@ -166,8 +167,9 @@ body {
   z-index: 0;
   display: block;
   width: 100%;
-  height: 1100px;
+  height: auto;
   margin: 140px auto;
+  overflow: hidden;
 }
 /* Load maincontent styles */
 /* Load responsive rules  */
@@ -229,9 +231,12 @@ body {
   }
 }
 @media (max-width: 1028px) {
-  span {
-    visibility: visible;
-    width: default;
+  i {
+    visibility: hidden;
+    width: 0px;
+  }
+  li {
+    margin: 0px auto;
   }
 }
 @media (max-width: 858px) {
