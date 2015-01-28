@@ -6,7 +6,7 @@
 
 
 $(document).ready(function(){
-    var clientWidth= $( window ).width();
+ 
 
     $(window).scroll(function(){
         if ($(window).scrollTop() > 250){
@@ -14,7 +14,7 @@ $(document).ready(function(){
         }
 
           if ($(window).scrollTop() < 250){
-          	if(!(clientWidth<1600)){
+          	if(!($( window ).width()<1600)){
           		 bringBackOriginalMenu();
 
           	}
