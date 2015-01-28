@@ -92,7 +92,7 @@ article p {
 .text-section {
   position: relative;
   z-index: 0;
-  width: auto;
+  width: 1000px;
   margin-bottom: 27px;
 }
 /* Load header styles */

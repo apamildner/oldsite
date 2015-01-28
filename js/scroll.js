@@ -1,9 +1,13 @@
+  
+var isScrolling= false;
+//Note to self: Add boolean to prevent slowdown.
   $(document).ready(function() {
 
       $('#about').click(function(e) {
 
 
           e.preventDefault();
+
 
 
 
