@@ -1,11 +1,12 @@
 
-var clientWidth= $( window ).width();
 
 
+  
 
 
 
 $(document).ready(function(){
+    var clientWidth= $( window ).width();
 
     $(window).scroll(function(){
         if ($(window).scrollTop() > 250){
@@ -23,23 +24,28 @@ $(document).ready(function(){
     });
 
 
+
+
     //This is the autotrigger responsive menu
 
-    $(window).resize(function(){
 
-    	if(clientWidth<1600){
+      $(window).resize(function(){
 
-    		toggleTopMenu();
-    	
-    		
-    	}
+        if($( window ).width()<1600){
 
-    	else{
-    		bringBackOriginalMenu();
-    	}
+            toggleTopMenu();
+        
+            
+        }
+
+        else{
+            bringBackOriginalMenu();
+        }
 
 
     });
+
+
 });
 
 
