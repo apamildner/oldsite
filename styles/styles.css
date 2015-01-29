@@ -46,7 +46,7 @@ article p {
   position: relative;
   border: solid 4px black;
   z-index: 0;
-  height: auto;
+  height: 380px;
   width: 640px;
   background: #ffffff url("scratched.jpg") repeat repeat;
   opacity: 0.8;
@@ -172,6 +172,66 @@ body {
   overflow: hidden;
 }
 /* Load maincontent styles */
+/* Footer*/
+footer {
+  background: #097054 url("gips.jpg") repeat;
+  position: relative;
+  width: 100%;
+  height: 405px;
+}
+footer span {
+  position: absolute;
+  top: 40px;
+  left: 150px;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
+footer .subscribe-section {
+  position: relative;
+  top: 67.5px;
+  z-index: 4000;
+  width: 100%;
+  background-color: #242e35;
+  opacity: 0.85;
+  height: 270px;
+}
+footer .subscribe-section .subscription-form {
+  margin-left: 40%;
+  margin-right: auto;
+  margin-top: 5%;
+  width: auto;
+}
+footer input[type=email],
+footer input[type=submit] {
+  height: 40.5px;
+  border-radius: 0;
+  display: inline;
+  float: left;
+}
+footer input[type=email] + input[type=submit] {
+  margin-left: 10.8px;
+}
+footer .btn {
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ccdddd;
+  padding: 10px;
+  color: #ccdddd;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+footer .btn:hover {
+  color: white;
+}
+footer form {
+  height: 54px;
+  padding: 0 13.5px;
+  min-width: 15em;
+  padding: 27px 0 auto 108px;
+}
 /* Load responsive rules  */
 @media (max-width: 1700px) {
   .text-section {
@@ -259,6 +319,7 @@ body {
   margin: 0px auto;
   width: 1000px;
   margin-bottom: 162px;
+  overflow: auto;
 }
 .sub-container-1 .pattern {
   position: relative;
@@ -282,9 +343,10 @@ body {
 .sub-container-2 {
   position: relative;
   background-color: #097054;
+  overflow: hidden;
   width: 100%;
   margin-top: 0px;
-  height: 1400px;
+  height: auto;
 }
 .sub-container-2 .paper {
   position: relative;

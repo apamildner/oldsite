@@ -80,7 +80,7 @@ function toggleTopMenu() {
     "marginRight": "auto",
     "marginBottom": "0",
     "marginLeft": "auto"
-})
+});
 
 	$(".main-nav ul").css("border-top-left-radius","5px");
 	$(".main-nav ul").css("border-top-right-radius","5px");

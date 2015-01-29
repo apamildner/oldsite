@@ -1,5 +1,73 @@
-footer{
+/* Footer*/
+
+footer {
+    background: @fancygreen url("gips.jpg") repeat ;
+    position: relative;
+    width: 100%;
+    height: @baseline*15;
+
+    span{
+
+position: absolute;
+    	top:40px;
+    	left:150px;
+    	font-size: 30px;
+    	font-weight: 700;
+    	color: white;
+    }
 
 
-	 
+    .subscribe-section {
+        position: relative;
+        top: @baseline*2.5;
+
+        z-index: 4000;
+        width: 100%;
+        background-color: @fancydarkblue;
+        opacity:0.85;
+        height: @baseline*10;
+
+        .subscription-form {
+            
+            margin-left: 40%;
+            margin-right: auto;
+            margin-top: 5%;
+
+            width:auto;
+            
+            
+        }
+    }
+    input[type=email], input[type=submit] {
+        height: @baseline*1.5;
+        border-radius: 0;
+        display: inline;
+        float: left;
+        
+    }
+    input[type=email]+input[type=submit] {
+        margin-left: @baseline/2.5;
+    }
+    .btn {
+        background-color: transparent;
+       
+        border-style: solid;
+        border-width: 2px;
+        border-color: @fancyblue;
+        padding: 10px;
+        color: @fancyblue;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+       &:hover{
+					color:white;
+				}
+    }
+    form {
+        height: @baseline*2;
+        padding: 0 @baseline/2;
+        min-width: 15em;
+        padding: @baseline 0 auto @baseline*4;
+    }
 }

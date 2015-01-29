@@ -19,6 +19,7 @@ var isScrolling= false;
 
       $('#portfolio').click(function(e) {
           e.preventDefault();
+          
 
 
 
@@ -35,6 +36,16 @@ var isScrolling= false;
 
           $("html, body").animate({
               scrollTop: 0
+          }, 1300);
+      });
+
+       $('#contact').click(function(e) {
+          e.preventDefault();
+
+
+
+          $("html, body").animate({
+              scrollTop: 4300
           }, 1300);
       });
 
