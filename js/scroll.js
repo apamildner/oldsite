@@ -45,7 +45,7 @@ var isScrolling= false;
 
 
           $("html, body").animate({
-              scrollTop: 4300
+              scrollTop: 3600
           }, 1300);
       });
 
