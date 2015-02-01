@@ -1,10 +1,12 @@
 /* Footer*/
 
 footer {
-    background: @fancygreen url("gips.jpg") repeat ;
+    background: @fancyorange url("pixelpattern.jpg") repeat repeat ;
     position: relative;
     width: 100%;
     height: @baseline*15;
+
+
 
     span{
 
@@ -37,6 +39,36 @@ position: absolute;
             
             
         }
+
+        .footer-nav{
+
+        
+        line-height: 1em;
+        
+        li {
+            cursor: pointer;
+            margin-top: 150px;
+            display: block;
+            
+            text-align: center;
+            float: left;
+            margin-right: 27px;
+            &:hover {
+                background-color: transparent;
+            }
+            a {
+                position: relative;
+                color: black;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: @baseline*0.7;
+                text-transform: uppercase;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
     }
     input[type=email], input[type=submit] {
         height: @baseline*1.5;

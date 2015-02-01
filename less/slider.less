@@ -1,0 +1,86 @@
+
+.slide{
+	min-height: 489px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding-top: @baseline*5;
+
+	.slide-content{
+
+		display: inline-block;
+		width: 15em;
+		height:5em;
+		padding: @baseline*2 @baseline;
+		line-height: 1em;
+		color:black;
+		opacity: 0.8;
+		
+		font-size:2.5em;
+		font-weight: bold;
+	}
+	.purple{
+		background: @darkpurple;
+	}
+
+	.light-blue{
+		background: @fancylightblue ;
+	}
+
+	.white{
+		background: @fancywhite;
+		opacity: 0.7;
+	}
+
+
+	
+
+
+
+}
+#slide-1{
+
+	background: @fancyorange url("skyline.jpg") no-repeat;
+
+
+	
+}
+
+#slide-2 {
+
+	background: @fancyorange url("paperandcomputer3.jpg") no-repeat;
+
+
+}
+#slide-3{
+
+	background: @fancyorange url("gronare.jpg") 0% 60%;
+}
+
+
+
+
+
+.cycle-prev, .cycle-next{
+
+	position: absolute;
+	top:50%;
+
+	z-index: 6000;
+	a{
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 3em;
+		&:hover{
+			color: #fff;
+
+		}
+	}
+}
+.cycle-prev{
+	left:3em;
+
+}
+.cycle-next{
+	right:3em;
+
+}

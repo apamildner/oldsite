@@ -19,22 +19,41 @@ ul i {
   margin: 40px auto;
   color: black;
 }
-article {
+article,
+.price-ul {
   position: relative;
   color: #eeeee7;
   text-align: center;
+  height: auto;
   margin-bottom: 189px;
 }
-article h1 {
+article h1,
+.price-ul h1 {
   font-size: 78px;
   font-weight: 700;
 }
-article h3 {
+article li h3,
+.price-ul li h3 {
+  font-style: normal;
+  font-size: 29px;
+  text-align: left;
+}
+article li h3 a,
+.price-ul li h3 a {
+  color: #ff9900;
+}
+article li h3 a:hover,
+.price-ul li h3 a:hover {
+  text-decoration: underline;
+}
+article h3,
+.price-ul h3 {
   font-size: 38px;
   font-weight: 300;
   font-style: italic;
 }
-article p {
+article p,
+.price-ul p {
   text-align: left;
   margin-left: 60px;
   font-size: 28px;
@@ -165,7 +184,6 @@ body {
 .main-container {
   position: relative;
   z-index: 0;
-  display: block;
   width: 100%;
   height: auto;
   margin: 140px auto;
@@ -174,7 +192,7 @@ body {
 /* Load maincontent styles */
 /* Footer*/
 footer {
-  background: #097054 url("gips.jpg") repeat;
+  background: #ff9900 url("pixelpattern.jpg") repeat repeat;
   position: relative;
   width: 100%;
   height: 405px;
@@ -201,6 +219,31 @@ footer .subscribe-section .subscription-form {
   margin-right: auto;
   margin-top: 5%;
   width: auto;
+}
+footer .subscribe-section .footer-nav {
+  line-height: 1em;
+}
+footer .subscribe-section .footer-nav li {
+  cursor: pointer;
+  margin-top: 150px;
+  display: block;
+  text-align: center;
+  float: left;
+  margin-right: 27px;
+}
+footer .subscribe-section .footer-nav li:hover {
+  background-color: transparent;
+}
+footer .subscribe-section .footer-nav li a {
+  position: relative;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 18.9px;
+  text-transform: uppercase;
+}
+footer .subscribe-section .footer-nav li a:hover {
+  color: black;
 }
 footer input[type=email],
 footer input[type=submit] {
@@ -386,4 +429,62 @@ footer form {
   margin: 100px auto 100px auto;
   font-size: 58px;
   font-weight: 700;
+}
+.slide {
+  min-height: 489px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  padding-top: 135px;
+}
+.slide .slide-content {
+  display: inline-block;
+  width: 15em;
+  height: 5em;
+  padding: 54px 27px;
+  line-height: 1em;
+  color: black;
+  opacity: 0.8;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+.slide .purple {
+  background: #6f5ca3;
+}
+.slide .light-blue {
+  background: #6599ff;
+}
+.slide .white {
+  background: #eeeee7;
+  opacity: 0.7;
+}
+#slide-1 {
+  background: #ff9900 url("skyline.jpg") no-repeat;
+}
+#slide-2 {
+  background: #ff9900 url("paperandcomputer3.jpg") no-repeat;
+}
+#slide-3 {
+  background: #ff9900 url("gronare.jpg") 0% 60%;
+}
+.cycle-prev,
+.cycle-next {
+  position: absolute;
+  top: 50%;
+  z-index: 6000;
+}
+.cycle-prev a,
+.cycle-next a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 3em;
+}
+.cycle-prev a:hover,
+.cycle-next a:hover {
+  color: #fff;
+}
+.cycle-prev {
+  left: 3em;
+}
+.cycle-next {
+  right: 3em;
 }
