@@ -459,13 +459,13 @@ footer form {
   opacity: 0.7;
 }
 #slide-1 {
-  background: #ff9900 url("skyline.jpg") no-repeat;
+  background: white url("skyline.jpg") no-repeat;
 }
 #slide-2 {
-  background: #ff9900 url("paperandcomputer3.jpg") no-repeat;
+  background: white url("paperandcomputer3.jpg") no-repeat;
 }
 #slide-3 {
-  background: #ff9900 url("gronare.jpg") 0% 60%;
+  background: white url("gronare.jpg") 0% 60%;
 }
 .cycle-prev,
 .cycle-next {
