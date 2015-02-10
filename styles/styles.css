@@ -374,7 +374,7 @@ footer form {
   .text-section {
     width: 100%;
   }
-  li {
+  .menu-wrapper li {
     margin: 0px auto;
     visibility: hidden;
   }
@@ -405,8 +405,9 @@ footer form {
   }
 }
 @media (max-width: 660px) {
-  .main-nav i {
-    font-size: 35px;
+  .main-nav ul i {
+    font-size: 25px;
+    margin: 40px 0px auto 0px;
   }
   footer span {
     left: 10px;

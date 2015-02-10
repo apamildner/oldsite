@@ -98,7 +98,7 @@ function toggleTopMenu() {
 
 	function bringBackOriginalMenu() {
 		$(".main-nav .menu-wrapper").animate().stop();
-	
+	$(".main-nav").css("padding","40.5px");
 	$(".shadow").css("visibility","visible");
 	$(".main-nav .menu-wrapper").css({
     "marginTop": "0",
