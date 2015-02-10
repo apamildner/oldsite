@@ -1,54 +1,52 @@
-  
-
   $(document).ready(function() {
 
 
 
-//This handles the calls from the footer navigation.
-    var currentHash= location.hash;
-    console.log(currentHash);
-   
-
-    if(currentHash=="#about"){
+      //This handles the calls from the footer navigation.
+      var currentHash = location.hash;
+      console.log(currentHash);
 
 
-   
+      if (currentHash == "#about") {
 
+
+
+          var offset = $("#aboutanchor").offset().top;
 
 
           $("html, body").animate({
-              scrollTop: 2300
+              scrollTop: offset-270
           }, 1300);
-        }
+      }
 
-        if (currentHash=="#portfolio") {
-
-
-
-          
-
-            $("html, body").animate({
-              scrollTop: 3600
-          }, 1300);
-
-          }
-
-
-            if (currentHash=="#contact") {
+      if (currentHash == "#portfolio") {
 
 
 
-          
+          var offset = $("#portfolioanchor").offset().top;
 
-            $("html, body").animate({
-              scrollTop: 4000
+          $("html, body").animate({
+              scrollTop: offset-80
           }, 1300);
 
+      }
 
 
-        };
-        
-   
+      if (currentHash == "#contact") {
+
+
+          var offset = $("#contactanchor").offset().top;
+
+
+          $("html, body").animate({
+              scrollTop: offset
+          }, 1300);
+
+
+
+      };
+
+
 
 
 
@@ -59,25 +57,29 @@
 
           e.preventDefault();
 
+          var offset = $("#aboutanchor").offset().top;
+
 
 
 
           $("html, body").animate({
-              scrollTop: 2300
+              scrollTop: offset - 270
           }, 1300);
       });
 
-    //----------------------------------------------- End Footer Nav Handling.
+      //----------------------------------------------- End Footer Nav Handling.
 
 
       $('.portfolio').click(function(e) {
           e.preventDefault();
-          
+
+          var offset = $("#portfolioanchor").offset().top;
+
 
 
 
           $("html, body").animate({
-              scrollTop: 3600
+              scrollTop: offset-80
           }, 1300);
       });
 
@@ -92,13 +94,15 @@
           }, 1300);
       });
 
-       $('.contact').click(function(e) {
+      $('.contact').click(function(e) {
           e.preventDefault();
+
+          var offset = $("#contactanchor").offset().top;
 
 
 
           $("html, body").animate({
-              scrollTop: 4000
+              scrollTop: offset
           }, 1300);
       });
 
