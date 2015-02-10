@@ -5,7 +5,7 @@
 /* Typography variables*/
 body {
   color: #097054;
-  font: 18px / 27px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 18px / 27px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
   -webkit-font-smoothing: antialiased;
 }
 p {
