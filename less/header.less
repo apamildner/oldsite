@@ -6,14 +6,40 @@ header {
     opacity: 0.9;
     width: 100%;
     box-shadow: inset 0px 15px 20px #888888;
-  
 }
 .main-nav {
+    i{
+                    font-size: 60px;
+                }
     
-    z-index: 1000;
     padding: @baseline*1.5 0;
-    ul {
-        
+    .dropdown-container {
+        z-index: -1;
+        position: fixed;
+        margin-top: -555px;
+        width: 100%;
+        .dropdown {
+            position: relative;
+            margin-top: 0px;
+            list-style-type: none;
+            background: @fancyorange url("paper.jpg") repeat;
+            box-shadow: 0px 10px 50px @fancydarkblue;
+            height: 85px;
+            text-align: center;
+            padding-top: 25px;
+            a {
+
+
+                list-style-type: none;
+                color: black;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-size: @baseline*1.5;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .menu-wrapper {
         position: relative;
         list-style-type: none;
         background-color: @fancyorange;
@@ -23,27 +49,41 @@ header {
         margin: 5px auto 0px auto;
         box-shadow: 0px 10px 50px @fancydarkblue;
         height: 150px;
-        li {
+        .fa-bars {
             cursor: pointer;
-            margin-top: 40px;
-            display: inline-block;
-            height: auto;
-            width: auto;
-            text-align: center;
-            float: right;
-            margin-right: 27px;
-            &:hover {
-                background-color: transparent;
-            }
-            a {
-                position: relative;
-                color: black;
-                letter-spacing: 2px;
-                font-weight: bold;
-                font-size: @baseline*0.7;
-                text-transform: uppercase;
+            position: absolute;
+            top: 15px;
+           
+            right: 40px;
+            color: black;
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: @baseline*1.5;
+            visibility: hidden;
+        }
+        ul {
+            li {
+                cursor: pointer;
+                margin-top: 0px;
+                display: inline-block;
+                height: auto;
+                width: auto;
+                text-align: center;
+                float: right;
+                margin-right: 27px;
                 &:hover {
+                    background-color: transparent;
+                }
+                a {
+                    position: relative;
                     color: black;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    font-size: @baseline*0.7;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: black;
+                    }
                 }
             }
         }

@@ -125,10 +125,36 @@ header {
   box-shadow: inset 0px 15px 20px #888888;
 }
 .main-nav {
-  z-index: 1000;
   padding: 40.5px 0;
 }
-.main-nav ul {
+.main-nav i {
+  font-size: 60px;
+}
+.main-nav .dropdown-container {
+  z-index: -1;
+  position: fixed;
+  margin-top: -555px;
+  width: 100%;
+}
+.main-nav .dropdown-container .dropdown {
+  position: relative;
+  margin-top: 0px;
+  list-style-type: none;
+  background: #ff9900 url("paper.jpg") repeat;
+  box-shadow: 0px 10px 50px #242e35;
+  height: 85px;
+  text-align: center;
+  padding-top: 25px;
+}
+.main-nav .dropdown-container .dropdown a {
+  list-style-type: none;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 40.5px;
+  text-transform: uppercase;
+}
+.main-nav .menu-wrapper {
   position: relative;
   list-style-type: none;
   background-color: #ff9900;
@@ -139,9 +165,20 @@ header {
   box-shadow: 0px 10px 50px #242e35;
   height: 150px;
 }
-.main-nav ul li {
+.main-nav .menu-wrapper .fa-bars {
   cursor: pointer;
-  margin-top: 40px;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 40.5px;
+  visibility: hidden;
+}
+.main-nav .menu-wrapper ul li {
+  cursor: pointer;
+  margin-top: 0px;
   display: inline-block;
   height: auto;
   width: auto;
@@ -149,10 +186,10 @@ header {
   float: right;
   margin-right: 27px;
 }
-.main-nav ul li:hover {
+.main-nav .menu-wrapper ul li:hover {
   background-color: transparent;
 }
-.main-nav ul li a {
+.main-nav .menu-wrapper ul li a {
   position: relative;
   color: black;
   letter-spacing: 2px;
@@ -160,7 +197,7 @@ header {
   font-size: 18.9px;
   text-transform: uppercase;
 }
-.main-nav ul li a:hover {
+.main-nav .menu-wrapper ul li a:hover {
   color: black;
 }
 .header-content {
@@ -208,7 +245,7 @@ footer span {
 footer .subscribe-section {
   position: relative;
   top: 67.5px;
-  z-index: 4000;
+  z-index: 1;
   width: 100%;
   background-color: #242e35;
   opacity: 0.85;
@@ -279,10 +316,10 @@ footer form {
 @media (max-width: 1700px) {
   .text-section {
     position: relative;
-    width: auto;
+    width: 50%;
   }
   .text-section article {
-    width: 500px;
+    width: auto;
     margin-bottom: 27px;
   }
   .text-section article h1 {
@@ -306,25 +343,25 @@ footer form {
   .main-nav {
     padding: 0;
   }
-  .main-nav ul {
+  .main-nav .menu-wrapper {
     position: fixed;
     width: 100%;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    margin: 0px;
+    margin: 0px auto;
     height: 65px;
   }
-  .main-nav ul i {
+  .main-nav .menu-wrapper i {
     margin-top: 3px;
   }
-  .main-nav ul li {
+  .main-nav .menu-wrapper li {
     margin-top: 0px;
   }
   .main-nav .shadow {
     visibility: hidden;
   }
 }
-@media (max-width: 1214px) {
+@media (max-width: 1360px) {
   .side-section {
     width: 384px;
     height: 255px;
@@ -333,22 +370,46 @@ footer form {
     visibility: hidden;
   }
 }
-@media (max-width: 1028px) {
-  i {
-    visibility: hidden;
-    width: 0px;
+@media (max-width: 1085px) {
+  .text-section {
+    width: 100%;
   }
   li {
     margin: 0px auto;
+    visibility: hidden;
+  }
+  .main-nav .menu-wrapper .fa-bars {
+    visibility: visible;
+  }
+  .main-nav .menu-wrapper ul li a {
+    cursor: default;
   }
 }
 @media (max-width: 858px) {
-  article {
-    margin-top: 27px;
-    height: 100px;
+  .text-section,
+  .sub-container-1 {
+    margin-left: 0px;
   }
-  article p {
-    visibility: hidden;
+  .text-section article,
+  .sub-container-1 article {
+    padding: 0px 5px;
+    width: auto;
+  }
+  .text-section article p,
+  .sub-container-1 article p {
+    margin-left: 0px;
+    word-break: normal;
+  }
+  .footer-nav {
+    display: none;
+  }
+}
+@media (max-width: 660px) {
+  .main-nav i {
+    font-size: 35px;
+  }
+  footer span {
+    left: 10px;
   }
 }
 .sub-container-1 {
@@ -360,7 +421,8 @@ footer form {
 .sub-container-1 article {
   color: #d9cdf6;
   margin: 0px auto;
-  width: 1000px;
+  padding: 0px 5px;
+  width: auto;
   margin-bottom: 162px;
   overflow: auto;
 }
@@ -459,13 +521,13 @@ footer form {
   opacity: 0.7;
 }
 #slide-1 {
-  background: white url("skyline.jpg") no-repeat;
+  background: #6599ff url("skyline.jpg") no-repeat;
 }
 #slide-2 {
-  background: white url("paperandcomputer3.jpg") no-repeat;
+  background: #6599ff url("paperandcomputer3.jpg") no-repeat;
 }
 #slide-3 {
-  background: white url("gronare.jpg") 0% 60%;
+  background: #6599ff url("gronare.jpg") 0% 60%;
 }
 .cycle-prev,
 .cycle-next {

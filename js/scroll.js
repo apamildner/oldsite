@@ -54,7 +54,7 @@
 
 
 
-      $('#about').click(function(e) {
+      $('.about').click(function(e) {
 
 
           e.preventDefault();
@@ -70,7 +70,7 @@
     //----------------------------------------------- End Footer Nav Handling.
 
 
-      $('#portfolio').click(function(e) {
+      $('.portfolio').click(function(e) {
           e.preventDefault();
           
 
@@ -92,7 +92,7 @@
           }, 1300);
       });
 
-       $('#contact').click(function(e) {
+       $('.contact').click(function(e) {
           e.preventDefault();
 
 
