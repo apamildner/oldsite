@@ -17,7 +17,7 @@
 
 
           $("html, body").animate({
-              scrollTop: 1900
+              scrollTop: 2300
           }, 1300);
         }
 
@@ -28,7 +28,7 @@
           
 
             $("html, body").animate({
-              scrollTop: 3200
+              scrollTop: 3600
           }, 1300);
 
           }
@@ -41,7 +41,7 @@
           
 
             $("html, body").animate({
-              scrollTop: 3600
+              scrollTop: 4000
           }, 1300);
 
 
@@ -63,7 +63,7 @@
 
 
           $("html, body").animate({
-              scrollTop: 1900
+              scrollTop: 2300
           }, 1300);
       });
 
@@ -77,7 +77,7 @@
 
 
           $("html, body").animate({
-              scrollTop: 3200
+              scrollTop: 3600
           }, 1300);
       });
 
@@ -98,7 +98,7 @@
 
 
           $("html, body").animate({
-              scrollTop: 3600
+              scrollTop: 4000
           }, 1300);
       });
 
