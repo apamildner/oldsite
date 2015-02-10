@@ -32,7 +32,7 @@ $(document).ready(function() {
 
 
     });
-    $("a").click(function(){
+    $(".dropdown-container").click(function(){
   menuToggled = false;
             $(".fa-bars").css("color", "black");
             $(" .dropdown-container").animate({
