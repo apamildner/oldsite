@@ -36,7 +36,7 @@ $(document).ready(function() {
   menuToggled = false;
             $(".fa-bars").css("color", "black");
             $(" .dropdown-container").animate({
-                "margin-top": "-555px",
+                "margin-top": "-275px",
             }, 300);
 
 

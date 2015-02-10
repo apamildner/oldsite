@@ -133,8 +133,9 @@ header {
 .main-nav .dropdown-container {
   z-index: -1;
   position: fixed;
-  margin-top: -555px;
+  margin-top: -275px;
   width: 100%;
+  visibility: hidden;
 }
 .main-nav .dropdown-container .dropdown {
   position: relative;
@@ -377,6 +378,9 @@ footer form {
   .menu-wrapper li {
     margin: 0px auto;
     visibility: hidden;
+  }
+  .main-nav .dropdown-container {
+    visibility: visible;
   }
   .main-nav .menu-wrapper .fa-bars {
     visibility: visible;
